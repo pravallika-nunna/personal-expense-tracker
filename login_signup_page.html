@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--
+
+    Primary color - #9e7a72
+    SEconday color - #c8c4ae
+    Accent - #b2b593
+    BAckground - #f9f7f7
+    Text - #181210
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Sign Up</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Playfair Display', serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #f9f7f7; /* Background color */
         }
-
+    
         .container {
             background-color: #fff;
             padding: 40px;
@@ -23,28 +32,29 @@
             width: 350px;
             text-align: center;
         }
-
+    
         h1 {
             margin-bottom: 20px;
+            color: #181210; /* Text color */
         }
-
+    
         .input-group {
             margin: 15px 0;
             position: relative;
             width: 100%;
         }
-
+    
         .input-group input {
             width: 100%;
             padding: 10px;
             padding-right: 40px;
             font-size: 16px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            border: 1px solid #c8c4ae; /* Secondary color */
             outline: none;
             box-sizing: border-box;
         }
-
+    
         .input-group .eye {
             position: absolute;
             right: 10px;
@@ -53,54 +63,46 @@
             cursor: pointer;
             font-size: 18px;
         }
-
+    
         .input-group button {
             width: 100%;
             padding: 10px;
             font-size: 16px;
             border: none;
             border-radius: 5px;
-            background-color: #ff7f00;
+            background-color: #9e7a72; /* Primary color */
             color: white;
             cursor: pointer;
         }
-
+    
         .input-group button:hover {
-            background-color: #e67300;
+            background-color: #b2b593; /* Accent color */
         }
-
+    
         .switch-link {
             margin-top: 10px;
             cursor: pointer;
             text-decoration: none;
+            color: #9e7a72; /* Primary color */
         }
-
-        /* Orange link for both forms */
-        .switch-link.login-link {
-            color: #ff7f00;
-        }
-
-        .switch-link.signup-link {
-            color: #ff7f00;
-        }
-
+    
         .switch-link:hover {
             text-decoration: underline;
         }
-
+    
         .form-section {
             display: none;
         }
-
+    
         .form-section.active {
             display: block;
         }
-
+    
         .error {
             color: red;
             font-size: 14px;
         }
-    </style>
+    </style>    
 </head>
 <body>
     <div class="container">
